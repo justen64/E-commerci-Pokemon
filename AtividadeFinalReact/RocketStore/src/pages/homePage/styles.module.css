@@ -1,0 +1,83 @@
+* {
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.botaoPaginacao {
+  background-color: #bea64a;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.botaoPaginacao:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+.botaoSelecionado {
+  background-color: #bea64a;
+  border: #bea64a;
+  color: rgb(0, 0, 0);
+}
+
+.selectMenu {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: #bea64a;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.selectMenu:hover {
+  background-color: #bea64a;
+  color: white;
+}
+
+.menuQ {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .botaoPaginacao {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .selectMenu {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .menuQ {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .botaoPaginacao {
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+
+  .selectMenu {
+    padding: 6px;
+    font-size: 12px;
+  }
+}

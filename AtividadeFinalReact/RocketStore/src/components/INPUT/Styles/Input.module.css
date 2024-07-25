@@ -1,0 +1,18 @@
+.botao {
+    background: #ede6ac;
+    color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 24px;
+    border-radius: 5px; 
+    text-align: center;
+    border-style: solid;
+    border-color: #bea64a;
+    border-width: 2px;
+  }
+
+  .botao:focus
+  {
+    outline: #bea64a;
+    outline-width: 3px;
+  }

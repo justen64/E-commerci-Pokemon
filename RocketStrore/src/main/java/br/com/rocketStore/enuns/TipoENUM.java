@@ -1,0 +1,7 @@
+package br.com.rocketStore.enuns;
+
+public enum TipoENUM {
+	NORMAL, AGUA, FOGO, PLANTA, PEDRA, TERRA, 
+	VOADOR, LUTADOR,FADA, DRAGÃO, INSETO, VENENOSO,
+	SOMBRIO, FANTASMA, GELO, PSIQUÍCO, ELÉTRICO, FERRO
+}

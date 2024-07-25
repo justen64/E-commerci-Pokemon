@@ -1,0 +1,55 @@
+.caixaPg{
+  text-align: center;
+  min-width: 80vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.caixa1{
+  display: flex;
+  min-width: 90vw;
+  min-height: 50vh;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.caixa2{
+  display: flex;
+  min-width: 90vw;
+  min-height: 50vh;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.julia{
+  width: 30%;
+  height: 30%;
+}
+
+.amanda{
+  width: 30%;
+  height: 30%;
+}
+
+.guido{
+  width: 30%;
+  height: 30%;
+}
+
+.jose{
+  width: 30%;
+  height: 30%;
+}
+
+.robert{
+  width: 30%;
+  height: 30%;
+}
+
+.rodrigo{
+  width: 30%;
+  height: 30%;
+}
