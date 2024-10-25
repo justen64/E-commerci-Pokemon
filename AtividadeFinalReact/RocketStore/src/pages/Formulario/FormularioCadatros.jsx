@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, TextField, Button, Typography } from "@mui/material";
 import { VscEye, VscEyeClosed } from "react-icons/vsc";
 import { NavBarPadrao } from "../../components/NavBar/NavBarP";
-import Footer from "../../components/Footer/footer"; // Importando o Footer corretamente
+import Footer from "../../components/Footer/footer";
 import { postCliente } from "../../services/clientes";
 export function FormPage() {
   const [nome, setNome] = useState("");
@@ -16,7 +16,7 @@ export function FormPage() {
   const [mostrarSenha, setMostrarSenha] = useState(false);
 
   const handleCadastrar = () => {
-    // Validar todos os campos aqui antes de prosseguir com o cadastro
+   
     if (
       !nome ||
       !telefone ||
@@ -29,34 +29,34 @@ export function FormPage() {
       alert("Todos os campos são obrigatórios.");
       return;
     }
-    // Validar o formato do email
+  
     if (!/\S+@\S+\.\S+/.test(email)) {
       alert("Por favor, insira um email válido.");
       return;
     }
-    // Validar o telefone
+   
     if (!/^\d{10}$/.test(telefone)) {
       alert("Por favor, insira um número de telefone válido com 10 dígitos.");
       return;
     }
-    // Validar o CPF
+   
     if (!/^\d{11}$/.test(cpf)) {
       alert("Por favor, insira um CPF válido com 11 dígitos.");
       return;
     }
-    // Validar a senha
+   
     if (senha !== confirmarSenha) {
       alert("As senhas não coincidem.");
       return;
     }
-    // Se todos os campos passaram nas validações, prosseguir com o cadastro
+  
     console.log("Informações do usuário:");
     console.log("Nome:", nome);
     console.log("Telefone:", telefone);
     console.log("Email:", email);
     console.log("CPF:", cpf);
     console.log("Endereço:", Cep);
-    setCadastrado(true); // apenas para demonstração, substitua pela lógica real de cadastro
+    setCadastrado(true);
     saveCliente();
   };
 
